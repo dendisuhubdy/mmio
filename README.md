@@ -1,0 +1,3 @@
+# ANSI C library for Matrix Market I/O from NIST
+
+The numerical data in the Matrix Market file formats can be easily processed using variants of fscanf() and fprintf() functions. The only non-trivial issue is to figure out what kind of matrix is represented in a Matrix Market file. Because of the wide range of possibilities, it is impractical to have a single function handle every case (furthermore, most applications will support only a subset of these matrix types). Instead, we provide utilities that identify and manage only the type and size information in MM files, leaving the actual reading and writing mechanisms to the driving application or higher-level I/O routines.
